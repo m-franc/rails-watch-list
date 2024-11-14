@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get 'signets/index'
+  # get 'signets/new'
+  # get 'signets/create'
   # get 'lists/index'
   # get 'lists/show'
   # get 'lists/new'
@@ -9,7 +12,7 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-  resources :lists
+  resources :lists, :signets
   # Defines the root path route ("/")
   # root "posts#index"
 end
